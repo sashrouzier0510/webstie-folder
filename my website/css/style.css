@@ -1,0 +1,305 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/************************************************* BODY ******************************************************************/
+body {
+  height: 100vh;
+  color: #BBD531;
+  font-size: 1.1em;
+  line-height: 1.4em;
+  background-color:rgb(0, 0, 0);
+}
+
+/* ABOUT ME BG COLOR  */
+
+.bgcolor1{
+  background-color: #da0b98;
+}
+
+/* about me sentences */
+
+.paragraph{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+/* EXERCISES BG COLOR  */
+
+.bgcolor2{
+  background-color: rgb(243, 158, 11);
+}
+
+/* PROJECTS BG COLOR  */
+
+.bgcolor3{
+  background-color: #15bb31;;
+}
+
+/* READINGS BG COLOR  */
+
+.bgcolor4{
+  background-color: #a51bf5;
+}
+
+.position1{
+  position: fixed;
+  top: 50%;
+  left: 30%;
+  font-size: 200px;
+}
+
+.position2{
+  position: fixed;
+  top: 73%;
+  left: 30%;
+  font-size: 300px;
+}
+
+.position3{
+  position: fixed;
+  top: 75.4%;
+  left: 68%;
+  font-size: 245px;
+}
+
+.position4{
+  position: fixed;
+    top: 43.9%;
+    left: 44%;
+    font-size: 350px;
+}
+
+.position5{
+  position: fixed;
+  top: 57.4%;
+  left: 70%;
+  font-size: 137px;
+}
+
+.position6{
+  position: fixed;
+    top: 77.4%;
+    left: 53%;
+    font-size: 193px;
+}
+
+/* zoom hover when hovering over exercises, readings and so onn... */
+
+.zoom{
+  transition: transform .2s;
+}
+
+.zoom:hover {
+  -ms-transform: scale(1.5);
+  -webkit-transform: scale(1.5); 
+  transform: scale(1.5); 
+}
+
+/************************************************* INDEX PAGE **********************************************************/
+.header{
+  display: flex;
+  justify-content: center;
+  width: auto;
+  height: auto;
+  text-align: center;
+  align-items: center;
+  margin-left: 100px;
+ 
+}
+
+.fade-in-image { 
+  animation: fadeIn 5s; 
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+/* title index page */
+
+.title {
+  width: 123vh;
+  margin-top: 39px;
+}
+
+/*********************************************** OVERLAY MENU ************************************************************/
+
+#trigger {
+  font-size: 35px;
+  cursor: pointer;
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  z-index: 110;
+  font-weight: bold;
+}
+
+.triggerclr1 {
+  color: #BBD531;
+}
+
+.triggerclr2 {
+  color: #EAEAEA;
+}
+
+#trigger:hover {
+  opacity: 0;
+}
+
+.overlay {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 300;
+  top: 0;
+  left: 0;
+  overflow-x: hidden;
+  transition: 0.2s;
+}
+
+.overlay-content {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.overlay a {
+  position: relative;
+  padding: 0px;
+  text-decoration: none;
+  font-family: sans-serif;
+  font-size: 8em;
+  color: #ffffff;
+  transition: all 0.5s;
+  text-transform: uppercase;
+  font-weight: normal;
+  flex: 1 100%;
+}
+
+.overlay a.one {
+  background: #BBD531;
+}
+
+.overlay a.two {
+  background: #BBD531;
+}
+
+.overlay a.three {
+  background: #BBD531;
+}
+
+.overlay a.four {
+  background: #BBD531;
+}
+
+.overlay a:hover, .overlay a:focus {
+  color: rgb(243, 158, 11);
+  background: #da0b98;
+}
+
+.overlay a span {
+  position: absolute;
+  left: 20px;
+  bottom: 68px;
+  transform: rotate(0deg);
+  transform-origin: left top;
+}
+
+.closebtn {
+  position: absolute;
+  z-index: 99;
+  top: 30px;
+  right: 10px;
+  font-size: 50px !important;
+  line-height: 0px;
+  cursor: pointer;
+  padding: 8px;
+  text-decoration: none;
+  font-family: sans-serif;
+  color: #fff;
+  transition: all 0.3s;
+  text-transform: uppercase;
+  font-weight: normal;
+}
+
+.closebtn:hover {
+  color: #222;
+}
+
+/*************************************************** INFO BAR ***** *****************************************************/
+
+h3 a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.infobar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 80px;
+  height: 100vh;
+  border-right: solid 1px #333;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  z-index: 100;
+}
+
+.infotitle {
+  position: absolute;
+  display: inline-block;
+  top: 50%;
+  transform: translateY(-50%) rotate(-90deg);
+  letter-spacing: 1.3px;
+}
+
+.infotitle2 {
+  position: absolute;
+  display: inline-block;
+  top: 50%;
+  transform: translateY(-50%) rotate(-90deg);
+  color: white;
+  letter-spacing: 1.3px;
+}
+
+.elogo {
+  width: 60%;
+  padding-bottom: 20%;
+}
+
+/* LINKS */
+
+a:link {
+  color: #BBD531; 
+  background-color: transparent; 
+  text-decoration: none;
+}
+
+a:visited {
+  color: #5f2099;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:hover {
+  color:  rgb(255, 255, 255);
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+a:active {
+  color: #a51bf5;
+  background-color: transparent;
+  text-decoration: underline;
+}
